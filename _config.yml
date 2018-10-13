@@ -485,7 +485,7 @@ baidu_analytics: 4144ca6f2a9b60f1feea7806f82aa6d0
 
 # Disqus
 disqus:
-  enable: true
+  enable: false
   shortname: Eson
   count: false 
   lazyload: true 
@@ -519,16 +519,16 @@ valine:
 # Gitment
 # Introduction: https://imsun.net/posts/gitment-introduction/
 gitment:
-  enable: false
+  enable: true
   mint: true # RECOMMEND, A mint on Gitment, to support count, language and proxy_gateway
   count: true # Show comments count in post meta area
   lazy: false # Comments lazy loading with a button
   cleanly: false # Hide 'Powered by ...' on footer, and more
   language: zh-CN # Force language, or auto switch by theme
-  github_user: # MUST HAVE, Your Github Username
-  github_repo: # MUST HAVE, The name of the repo you use to store Gitment comments
-  client_id: # MUST HAVE, Github client id for the Gitment
-  client_secret: # EITHER this or proxy_gateway, Github access secret token for the Gitment
+  github_user: ESblog # MUST HAVE, Your Github Username
+  github_repo: esblog.github.io  # MUST HAVE, The name of the repo you use to store Gitment comments
+  client_id: 04d744b92792c6240a8f # MUST HAVE, Github client id for the Gitment
+  client_secret: 6dbf6ffc70aae144a5f8b6dbc22d37d7616e9873 # EITHER this or proxy_gateway, Github access secret token for the Gitment
   proxy_gateway: # Address of api proxy, See: https://github.com/aimingoo/intersect
   redirect_protocol: # Protocol of redirect_uri with force_redirect_protocol when mint enabled
 
