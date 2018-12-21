@@ -66,20 +66,20 @@ footer:
   icon:
     # Icon name in fontawesome, see: https://fontawesome.com/v4.7.0/icons
     # `heart` is recommended with animation in red (#ff0000).
-    name: user
+    name: heart
     # If you want to animate the icon, set it to true.
-    animated: false
+    animated: true
     # Change the color of icon, using Hex Code.
-    color: "#808080"
+    color: "#ff0000"
 
   # If not defined, will be used `author` from Hexo main config.
   copyright: 
   # -------------------------------------------------------------
   powered:
     # Hexo link (Powered by Hexo).
-    enable: true
+    enable: false
     # Version info of Hexo after Hexo link (vX.X.X).
-    version: true
+    version: false
 
   theme:
     # Theme & scheme info link (Theme - NexT.scheme).
@@ -88,7 +88,7 @@ footer:
     version: true
   # -------------------------------------------------------------
   # Any custom text can be defined here.
-  custom_text: Hosted by <a target="_blank" rel="external nofollow" href="https://pages.coding.me"><b>Coding Pages</b></a> and <a target="_blank" rel="external nofollow" href="https://pages.github.com"><b>Github Pages</b></a>
+  # custom_text: Hosted by <a target="_blank" rel="external nofollow" href="https://pages.coding.me"><b>Coding Pages</b></a> and <a target="_blank" rel="external nofollow" href="https://pages.github.com"><b>Github Pages</b></a>
 
 # ---------------------------------------------------------------
 # SEO Settings
@@ -159,7 +159,8 @@ site_state: true
 social:
   GitHub: https://github.com/xu-song || github
   E-Mail: mailto:xusong.vip@gmail.com || envelope
-  QQ: http://wpa.qq.com/msgrd?v=3&uin=373453180&site=qq&menu=yes || qq
+  Chat: https://gitter.im/esonxu/general || gitter
+  #QQ: http://wpa.qq.com/msgrd?v=3&uin=373453180&site=qq&menu=yes || qq
   #微博: http://blog.eson.org || weibo
   #豆瓣: http://douban.com/people/your-user-name || douban
   #知乎: http://www.zhihu.com/people/your-user-name || zhihu
@@ -294,6 +295,10 @@ post_meta:
     another_day: true
   categories: true
 
+# Post photo preview settings. Set photos in post front-matter first
+photos:
+  display_in_post: false
+
 # Post wordcount display settings
 # Dependencies: https://github.com/theme-next/hexo-symbols-count-time
 symbols_count_time:
@@ -309,9 +314,9 @@ codeblock:
   border_radius:
   # Add copy button on codeblock
   copy_button:
-    enable: false
+    enable: true
     # Show text copy result
-    show_result: false
+    show_result: true
 
 # Wechat Subscriber
 wechat_subscriber:
@@ -520,7 +525,7 @@ valine:
 # Introduction: https://imsun.net/posts/gitment-introduction/
 gitment:
   enable: true
-  mint: true # RECOMMEND, A mint on Gitment, to support count, language and proxy_gateway
+  mint: false # RECOMMEND, A mint on Gitment, to support count, language and proxy_gateway
   count: true # Show comments count in post meta area
   lazy: false # Comments lazy loading with a button
   cleanly: false # Hide 'Powered by ...' on footer, and more
@@ -629,8 +634,8 @@ vkontakte_api:
 # Star rating support to each article.
 # To get your ID visit https://widgetpack.com
 rating:
-  enable: false
-  id:     #<app_id>
+  enable: true
+  id:  14529     
   color:  fc6423
 # ---------------------------------------------------------------
 
@@ -747,8 +752,8 @@ note:
   #  - modern    bs-callout new (v2-v3) alert style.
   #  - flat      flat callout style with background, like on Mozilla or StackOverflow.
   #  - disabled  disable all CSS styles import of note tag.
-  style: simple
-  icons: false
+  style: modern
+  icons: true
   border_radius: 3
   # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
   # Offset also applied to label tag variables. This option can work with disabled note tag.
